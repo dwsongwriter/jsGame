@@ -1,0 +1,52 @@
+body {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    text-align: center;
+    background-color: #fefefe;
+    border-style: dashed;
+    border-color: #67b89d69;
+    border-width: 10px;
+    border-radius: 20px;
+    margin-top: 100px;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+img {
+    width: 200px;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+button {
+    cursor: pointer;
+    background-color: #fefefe;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 75px;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: #67b89d69;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 40px;
+}
+
+.score {
+    margin-top: 20px;
+    font-size: 30px;
+}
