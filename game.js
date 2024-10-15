@@ -51,10 +51,30 @@ const resetButton = document.createElement("button");
 resetButton.textContent = "Reset Game";
 document.body.appendChild(resetButton);
 
+// Add an id to the reset button and use it to change resBtn CSS properties
+resetButton.id = "resBtn";
+const resBtn = document.getElementById("resBtn");
+resBtn.style.backgroundColor = "#efefef";
+resBtn.style.padding = "1em";
+resBtn.style.border = "5px solid #49BCF6";
+resBtn.style.marginTop = "2em";
+resBtn.style.marginBottom = "300px";
+resBtn.style.fontWeight = "bolder";
+resBtn.addEventListener("mouseover", function() {
+    this.style.backgroundColor = "#49bcf6";
+    this.style.border =  "5px solid #efefef";
+})
+resBtn.addEventListener("mouseout", function() {
+    this.style.backgroundColor = "#efefef";
+    this.style.border =  "5px solid #49bcf6";
+})
+
+
 resetButton.addEventListener("click", () => {
     playerPoints = 0;
     computerPoints = 0;
     result.textContent = "Choose your move!";
+    updatePoints();
 });
 
 buttons.forEach((button) => {
